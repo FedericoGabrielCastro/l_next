@@ -10,6 +10,13 @@
     "generate": "graphql-codegen"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mantine/core": "^5.9.4",
+    "@mantine/form": "^5.9.4",
+    "@mantine/hooks": "^5.9.4",
+    "@mantine/next": "^5.9.4",
     "apollo-server-micro": "^3.11.1",
     "class-validator": "^0.14.0",
     "eslint": "8.29.0",
@@ -22,6 +29,7 @@
     "react-dom": "18.2.0",
     "react-query": "^3.39.2",
     "reflect-metadata": "^0.1.13",
+    "tabler-icons-react": "^1.56.0",
     "type-graphql": "^1.1.1"
   },
   "devDependencies": {
