@@ -2,22 +2,7 @@ import "reflect-metadata"
 import { ApolloServer } from "apollo-server-micro";
 import { buildSchema, Resolver, Query, Arg, ObjectType, Field, ID } from "type-graphql";
 
-@ObjectType()
-export class Dog {
-    @Field(() => ID)
-    name: string
-}
-
-@Resolver(Dog)
-export class DogsResolver {
-    @Query(() => [Dog])
-    dogs(): Dog[] {
-        return [
-            { name: "dog"},
-            { name: "dog_two" }
-        ]
-    }
-}
+import { DogsResolver } from "../../src/schema/dogs.resolver";
 
 // Scheme dogs.
 const schema = await buildSchema({
